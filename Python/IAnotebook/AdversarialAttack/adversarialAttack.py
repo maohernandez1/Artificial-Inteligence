@@ -16,4 +16,7 @@ x = image.img_to_array(image.load_img('tw.jpg', target_size=(299, 299)))
 x /= 255
 x -= 0.5
 x *= 2 
-print(x.shape)
+
+x = x.reshape([1, x.shape[0], x.shape[1], x.shape[2]])
+y = iv3.predict(x)
+decode_predictions(y)
