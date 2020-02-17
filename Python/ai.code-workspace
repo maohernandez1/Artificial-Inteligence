@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "IAnotebook\\LinealRegression"
+		},
+		{
+			"path": "IAnotebook\\GradientDescent"
 		}
 	]
 }
